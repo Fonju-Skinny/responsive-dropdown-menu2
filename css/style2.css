@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    list-style-type: none;
+    text-decoration: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: #4f5c65;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    background-color: #fff;
+    font-family: Rubik;
+    color: #4f5c65;
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    margin: 0;
+  }
+
+  html{
+    scroll-behavior: smooth;
+    
+  }
+
+  :root {
+    --colors-primary: #02172A;
+    --colors-secondary: #48e7d5;
+    --colors-headerBg: #02172A;
+    --colors-headerMenuHoverBg: #1b2e40;
+    --colors-headerText: #48e7d5;
+    --colors-sidenavBg: #a3abb4;
+    --colors-sidenavText: #353e44;
+    --colors-sidenavItemHover: #bfc4cb;
+    --colors-primaryText: #02172a;
+    --colors-buttonBg: linear-gradient(90deg,rgba(34,161,254,1) 0%,rgba(56,205,229,1) 100%);
+    --colors-buttonHoverBg: linear-gradient(90deg,rgb(57 172 254) 0%,rgb(93 215 234) 100%);
+    --colors-buttonText: #fff;
+    --colors-buttonOutlineBg: #fff;
+    --colors-buttonOutlineText: #0182f4;
+    --colors-buttonOutlineBorder: #0182f4;
+    --colors-buttonOutlineHoverBg: #0182f4;
+    --colors-buttonOutlineHoverText: #fff;
+    --colors-buttonOutlineHoverBorder: #0182f4;
+    --colors-contentHeaderBg: #dae2eb;
+    --colors-contentHeaderText: #02162a;
+    --colors-contentHeaderFilterBg: #c9d1da;
+    --colors-contentBg: #cfd7de;
+    --colors-contentText: #02162a;
+    --logoUrl: url(https://uploads-ssl.webflow.com/5d5732b583100b2e76fd52f5/5d7a5438e5f68d632c7c1cab_gradient-logo-TRANSPARENT.png);
+    --logoShortUrl: url(https://uploads-ssl.webflow.com/5d5732b583100b2e76fd52f5/5e8b9a9aeb8aefaf4568d8de_grad-logo-small.png);
+  }
+
+  .navbar-3 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 100;
+    display: block;
+    max-height: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: transparent;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+    font-family: Roboto,sans-serif;
+    color: #fff;
+  }

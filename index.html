@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dropdown Menu Responsive</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="./css/fontawesome-free-6.2.1-web/css/all.css"
+    />
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="header" id="header">
+      <div class="updonics" id="updonics">
+        <i class="fas fa-chevron-down shevron_header" id="she_down"></i>
+        <i class="fas fa-chevron-up shevron_header" id="she_up"></i>
+      </div>
+
+      <div class="container">
+        <div class="header-main">
+          <div class="logo">
+            <a class="logograd" href="#">
+              <img src="./img/main_gradeLogo.png" alt="" />
+            </a>
+            <a class="logoblack" href="#">
+              <img src="./img/black logo.png" alt="" />
+            </a>
+            <a class="logowhite" href="#">
+              <img src="./img/white logo.png" alt="" />
+            </a>
+            <i id="NavSearch" class="fas fa-search Navearch"> </i>
+          </div>
+
+          <div class="open-nav-menu">
+            <span class="fas fa-bars"></span>
+          </div>
+          <div class="menu-overlay"></div>
+          <!-- navigation menu start -->
+
+          <nav id="navmenu" class="nav-menu">
+            <div class="close-nav-menu fas fa-xmark"></div>
+            <ul class="menu">
+              <li class="menu-item menu-item-has-children">
+                <a href="#" data-toggle="sub-menu">Home <i class="plus"></i></a>
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="#">Home 1</a></li>
+                  <li class="menu-item"><a href="#">Home 2</a></li>
+                  <li class="menu-item"><a href="#">Home 3</a></li>
+                  <li class="menu-item"><a href="#">Home 4</a></li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-has-children">
+                <a href="#" data-toggle="sub-menu"
+                  >Pages <i class="plus"></i
+                ></a>
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="#">page 1</a></li>
+                  <li class="menu-item"><a href="#">page 2</a></li>
+                  <li class="menu-item"><a href="#">page 3</a></li>
+                  <li class="menu-item"><a href="#">page 4</a></li>
+                  <li class="menu-item"><a href="#">page 5</a></li>
+
+                  <li class="menu-item"><a href="#">page 6</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="#">About</a>
+              </li>
+              <li class="menu-item">
+                <a href="#">Services</a>
+              </li>
+              <li class="menu-item menu-item-has-children">
+                <a href="#" data-toggle="sub-menu"
+                  >others <i class="plus"></i
+                ></a>
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="#">Home 1</a></li>
+                  <li class="menu-item"><a href="#">Home 2</a></li>
+                  <li class="menu-item"><a href="#">Home 3</a></li>
+                  <li class="menu-item"><a href="#">Home 4</a></li>
+                </ul>
+              </li>
+
+              <li class="menu-item">
+                <a href="#">News</a>
+              </li>
+              <li class="menu-item">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+
+            <div class="buttons">
+              <div class="div">
+                <a href="" class="btn"><span>My Account</span></a>
+                <a href="" class="btn"><span>Hire Us</span></a>
+              </div>
+
+              <span class="hide_btns">
+                <i id="down" class="fas fa-chevron-down"></i>
+                <i id="up" class="fas fa-chevron-up"></i>
+              </span>
+
+              <div id="importanthis_buttons" class="div importanthis_buttons">
+                <a href="" class="btn"><span>Exploit Us</span></a>
+                <a href="" class="btn"><span>Categories</span></a>
+                <a href="" class="btn"><span>LogIn</span></a>
+                <a href="" class="btn"><span>Sign In</span></a>
+              </div>
+            </div>
+          </nav>
+          <!-- navigation menu end -->
+
+          <!-- buttons menu end -->
+
+          <!-- buttons menu end -->
+        </div>
+      </div>
+      <div class="searchdiv" id="searchdiv">
+        <i class="fas fa-xmark closeSeach" id="closeSeach"></i>
+        <label for="Search" class="searchlabel" id="searchlabel">
+          <i id="NavSearch" class="fas fa-search NavSearchic"></i>
+          <input class="search" type="search" name="Search" id="search" />
+        </label>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- home section start -->
+    <section class="home-section" id="home_section">
+      <div class="home-section-iccs">
+        <i
+          class="fas fa-sliders home_section_iccs_cons"
+          id="home_section_iccs_bars"
+        ></i>
+
+        <i
+          class="fas fa-xmark home_section_iccs_cons"
+          id="home_section_iccs_xmark"
+        ></i>
+      </div>
+
+      <div class="sid_ics">
+        <a
+          href="#"
+          class="tab-links active-link ics ics1"
+          onclick="opentab('Theme')"
+        >
+          <i class="fa fa-droplet"></i>
+          <h1>Theme?</h1></a
+        >
+
+        <a href="#" class="tab-links ics ics2" onclick="opentab('Like')">
+          <i class="fa fa-thumbs-up"></i>
+          <h1>Like it?</h1>
+        </a>
+
+        <a href="#" class="tab-links ics ics3" onclick="opentab('Guide')">
+          <i class="fa fa-question"></i>
+          <h1>Guide?</h1></a
+        >
+
+        <a href="#" class="tab-links ics ics4" onclick="opentab('Search')">
+          <i class="fa fa-search"></i>
+          <h1>Search?</h1></a
+        >
+      </div>
+
+      <div class="home-section-main">
+        <div id="Theme" class="tab-content active-tab">
+          <div id="themess">
+            <span id="closeallthisex" class="closeallthisex">
+              <i class="fas fa-xmark"></i>
+            </span>
+            <div class="themes">
+              <div
+                onclick="ThemesSun()"
+                id="themesSun"
+                class="fas fa-sun themesics"
+              ></div>
+              <div
+                onclick="ThemesMoon()"
+                id="themesMoon"
+                class="fas fa-moon themesics"
+              ></div>
+              <div
+                onclick="ThemesGradient()"
+                id="themesGradient"
+                class="fas fa-sun themesics"
+              ></div>
+            </div>
+            <h3 id="themeNmae">
+              <span id="themebg">Background-color: dark blue; </span> <br />
+              <span id="themeclr">color: Purple;</span>
+            </h3>
+          </div>
+        </div>
+        
+        <div id="Like" class="tab-content">
+          <div class="starcontainer">
+            <span id="closeallthiset" class="closeallthisex">
+              <i class="fas fa-xmark"></i>
+            </span>
+            <div class="post">
+              <div class="text">Thanks for rating us!</div>
+              <div class="edit">EDIT</div>
+            </div>
+            <div class="star-widget">
+              <input type="radio" name="rate" id="rate-5" />
+              <label for="rate-5" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-4" />
+              <label for="rate-4" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-3" />
+              <label for="rate-3" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-2" />
+              <label for="rate-2" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-1" />
+              <label for="rate-1" class="fas fa-star"></label>
+              <form action="#">
+                <header></header>
+                <div class="textarea">
+                  <textarea
+                    cols="30"
+                    placeholder="Describe your experience.."
+                  ></textarea>
+                </div>
+                <div class="btn">
+                  <button type="submit">Post</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div id="Guide" class="tab-content">
+          <!-- faqs section starts -->
+          <div class="FAQS">
+            <div class="fags">
+              <div class="wrapper">
+                <button class="toggle">
+                  What is the return policy?
+                  <i class="fas fa-plus icon"></i>
+                </button>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Soluta aliquam facere adipisci quod mollitia, aut nemo
+                    deleniti fugiat et, corrupti sequi. Omnis dolorem quos
+                    eligendi placeat soluta sint corrupti quod.
+                  </p>
+                </div>
+              </div>
+              <div class="wrapper">
+                <button class="toggle">
+                  How do I apply the coupon?
+                  <i class="fas fa-plus icon"></i>
+                </button>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolores error doloremque, quibusdam qui necessitatibus autem
+                    aperiam reprehenderit? Ipsum maiores dolore inventore ea.
+                    Accusantium fuga eius laboriosam iusto blanditiis doloremque
+                    ullam?
+                  </p>
+                </div>
+              </div>
+              <div class="wrapper">
+                <button class="toggle">
+                  How do I become a member?
+                  <i class="fas fa-plus icon"></i>
+                </button>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae consectetur officiis labore commodi sunt ex
+                    praesentium dolor magnam asperiores reiciendis. Minus magnam
+                    nesciunt aliquid eos ipsam sequi recusandae quos incidunt.
+                  </p>
+                </div>
+              </div>
+              <div class="wrapper">
+                <button class="toggle">
+                  How do I become a member?
+                  <i class="fas fa-plus icon"></i>
+                </button>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae consectetur officiis labore commodi sunt ex
+                    praesentium dolor magnam asperiores reiciendis. Minus magnam
+                    nesciunt aliquid eos ipsam sequi recusandae quos incidunt.
+                  </p>
+                </div>
+              </div>
+              <div class="wrapper">
+                <button class="toggle">
+                  How do I become a member?
+                  <i class="fas fa-plus icon"></i>
+                </button>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae consectetur officiis labore commodi sunt ex
+                    praesentium dolor magnam asperiores reiciendis. Minus magnam
+                    nesciunt aliquid eos ipsam sequi recusandae quos incidunt.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- faqs section ends -->
+        </div>
+
+        <div id="Search" class="tab-content">Search?</div>
+      </div>
+    </section>
+
+    <!-- home section end -->
+
+    <script src="js/script.js"></script>
+    <!-- <script>
+      let tablinks = document.getElementsByClassName("tab-links");
+      let tabcontents = document.getElementsByClassName("tab-content");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script> -->
+  </body>
+</html>
