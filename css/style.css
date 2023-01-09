@@ -1624,7 +1624,7 @@ form .btn button:hover{
     left: -30px;
     /* transform: rotate(-90deg); */
 
-    box-shadow: 10px -6px 0 -6px var(--color-boxshadow-sh);
+    box-shadow: 10px -6px 0 -6px var(--background-main);
   }
 
   
@@ -1651,11 +1651,15 @@ form .btn button:hover{
   .starcontainer{
     top: 20px;
   }
-
+  .searchdiv.active{
+    top: 300px;
+    /* border-radius: 0; */
+    /* width: 90%; */
+  }
 }
 @media (max-width: 350px){
   .searchdiv.active{
-    top: 120px;
+    top: 200px;
     border-radius: 0;
     width: 90%;
   }

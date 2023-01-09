@@ -1,22 +1,4 @@
-// (() => {
 
-//   const openNavMenu = document.querySelector(".open-nav-menu"),
-//     closeNavMenu = document.querySelector(".close-nav-menu"),
-//     navMenu = document.querySelector(".nav-menu"),
-//     menuOverlay = document.querySelector(".menu-overlay"),
-//     mediaSize = 1100;
-// //
-//   openNavMenu.addEventListener("click", toggleNav);
-//   closeNavMenu.addEventListener("click", toggleNav);
-//   // close the navMenu by clicking outside
-//   menuOverlay.addEventListener("click", toggleNav);
-
-//   function toggleNav() {
-//     navMenu.classList.toggle("open");
-//     menuOverlay.classList.toggle("active");
-//     document.body.classList.toggle("hidden-scrolling");
-//   }
-// })();
 
 (() => {
   const openNavMenu = document.querySelector(".open-nav-menu"),
@@ -222,10 +204,14 @@ closeallthiset.addEventListener("click", cLoseallthisex);
 
 function cLoseallthisex() {
   home_section.classList.remove("active");
+  home_section_iccs_xmark.style.display = "none";
+  home_section_iccs_bars.style.display = "flex";
 }
 
 function cLoseallthisex() {
   home_section.classList.remove("active");
+  home_section_iccs_xmark.style.display = "none";
+  home_section_iccs_bars.style.display = "flex";
 }
 
 
