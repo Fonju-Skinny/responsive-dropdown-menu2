@@ -1556,7 +1556,7 @@ form .btn button:hover{
 }
 
 
-@media (max-width: 540px){
+@media (max-width: 850px){
   nav #NavSearch{
     color: var(--background-main);
     opacity: 1;
@@ -1622,28 +1622,11 @@ form .btn button:hover{
     border-radius: 100%;
     top: -2px;
     left: -30px;
+    display: none;
     /* transform: rotate(-90deg); */
 
     box-shadow: 10px -6px 0 -6px var(--background-main);
   }
-
-  
-.home-section .home-section-iccs::before {
-  content: "";
-  width: 0.001px;
-  height: 0.001px;
-  background: var(--color-sub-main);
-  position: absolute;
-  bottom: 13px;
-  transition: 0.5s ease-in-out;
-  left: 0;
-}
-.home-section .home-section-iccs:hover::before {
-  width: 100%;
-  height: 2px;
-  border-radius: 100%;
-}
- 
 }
 
 @media (max-width: 500px){
@@ -1653,8 +1636,6 @@ form .btn button:hover{
   }
   .searchdiv.active{
     top: 300px;
-    /* border-radius: 0; */
-    /* width: 90%; */
   }
 }
 @media (max-width: 350px){
