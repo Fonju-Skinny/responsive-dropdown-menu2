@@ -1468,29 +1468,6 @@ form .btn button:hover{
   .buttons .importanthis_buttons:active {
     overflow: scroll;
   }
-  /* .buttons .importanthis_buttons::before {
-    top: 14px;
-    left: -29px;
-
-    box-shadow: 10px -6px 0 -6px var(--background-main);
-  }
-
-  .buttons .importanthis_buttons::after {
-    content: "";
-    width: 30px;
-    height: 30px;
-    background: transparent;
-    position: absolute;
-    border-radius: 100%;
-    top: 14px;
-    right: -29px;
-    transform: rotate(-90deg);
-
-    box-shadow: 10px -6px 0 -6px var(--background-main);
-  }
-   */
-
-
 
    .buttons .importanthis_buttons {
     position: absolute;
