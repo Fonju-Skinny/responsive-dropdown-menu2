@@ -16,6 +16,7 @@
   --color-sub-main: rgba(56, 205, 229, 1);
   --color-sub: rgb(2, 1, 42);
   --background-main: rgb(2, 1, 42);
+  --background-mainopati:rgba(198, 198, 200, 0.075);
   --odd-color-1:aqua;
   transition: 2s ease-in-out;
 }
@@ -97,7 +98,7 @@ body.activethemesGradient{
   display: flex;
   opacity: 0;
   transition: 1s;
-  box-shadow: 0 0 300px var(--color-main);
+  box-shadow: 0 0 300px var(--background-main);
 }
 
 .slider .slide.active{
@@ -112,8 +113,7 @@ body.activethemesGradient{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* box-shadow: inset 0 0 150px var(--background-main); */
-  box-shadow: 0 0 300px var(--color-main);
+  box-shadow: 0 0 300px var(--background-main);
 
   
 }
@@ -128,6 +128,11 @@ body.activethemesGradient{
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 5px 25px var(--background-main);
+  transition: .1s;
+  opacity: 0;
+}
+.slider .slide.active .info{
+opacity: 1;
 }
 
 .slider .slide .info h2{
@@ -145,15 +150,16 @@ body.activethemesGradient{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 70px;
+  /* gap: 0; */
   opacity: 0;
   transition: opacity 0.5s ease;
   /* background: red; */
   cursor: pointer;
   position: absolute;
-  right: -92px;
-  bottom: 100px;
+  right: -22px;
+  /* bottom: 60px; */
   transform: rotate(90Deg);
+  z-index: 1000;
 }
 
 .slider:hover .navigation{
@@ -168,10 +174,12 @@ body.activethemesGradient{
 color: var(--color-main);
   font-size: 20px;
   padding: 10px;
+  opacity: .6;
   
 }
 .prev-btn:hover, .next-btn:hover, .pause-btn:hover, .play-btn:hover{
-  color: var(--color-sub-main);
+  /* color: var(--color-sub-main); */
+  opacity: 1;
   
 }
 .pause-btn, .play-btn{
@@ -183,162 +191,186 @@ color: var(--color-main);
 }
 
  
-/* <!-- header slider navigation points starts --> */
-
-
-.navigation-visibility{
-  /* z-index: 99; */
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  right: -50px;
-  /* background: red; */
-  gap: 15px;
-  bottom: 110px;
-  transform: rotate(90deg);
-}
-
-.navigation-visibility .slide-icon{
-  z-index: 999;
-  background: var(--background-main);
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
-}
-
-.navigation-visibility .slide-icon.active{
-  background: var(--color-sub-main);
-}
-/* <!-- header slider navigation points ends --> */
-
 
 /* <!-- header slider socials starts --> */
-.slider .all_socialssicss{
-  justify-content: center;
-  align-items: center;
-  display: flex;
+
+.socialsM{
   position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding-top: 50px;
   background: var(--background-main);
-  padding: 10px;
-  padding-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  bottom: -120px;
+}
+.blur{
+  width: 100%;
+  height: 1px;
+  background: var(--background-main);
+  position: fixed;
   bottom: 0;
-  width: 55%;
-  height: 20px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  transition: 1s;
-  box-shadow: 0 0 50px var(--background-main);
+  left: 0;
 }
-.slider .all_socialssicss .all_socsicss{
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  gap: 25px;
-  /* height: 0px; */
-  padding: 10px 20px;
-  padding-bottom: 40px;
+.blur.active{
+  height: 100vh;
+  opacity: .7;
+  /* box-shadow:inset 0 0 150px black; */
+}
+.socialsM.active{
+  bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.socialsM .chevro{
+  color: var(--color-main);
+  font-size: 22px;
+  padding: 15px;
+  border-radius: 100%;
   background: var(--background-main);
-  margin-bottom: 20px;
-  border-radius: 50px;
-  box-shadow: 0 0 5 0px var(--background-main);
-}
-
-
-
-
-.slider .all_socialssicss .all_socsicss::before{
-  content: '';
-  background: transparent;
   position: absolute;
-  left: -35px;
-  top: 10px;
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  box-shadow: 15px 5px 0 -5px var(--background-main);
-  transform: rotate(30deg);
-}
-
-
-.slider .all_socialssicss .all_socsicss::after{
-  content: '';
-  background: transparent;
-  position: absolute;
-  right: -35px;
-  top: 10px;
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  box-shadow: 15px 5px 0 -5px var(--background-main);
-  transform: rotate(115deg);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.slider .all_socialssicss .social_iconLnks{
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  position: relative;
-  background: var(--color-main);
-  color: var(--background-main);
+  top: -30px;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
-}
-.slider .all_socialssicss .social_iconLnks .iconsss{
-  position: absolute;
-  font-size: 30px;
-  /* color:black; */
-  opacity: .7;
-}
-.slider .all_socialssicss .social_iconLnks:hover .iconsss{
-  font-size: 30px;
-  opacity: 1;
-  padding: 5px;
-  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.slider .all_socialssicss .social_iconLnks p{
+
+
+
+.socialsM .chevro::before{
+  content: '';
+  background: transparent;
   position: absolute;
-  opacity: 0;
-  transition: 1s;
-  top: 40px;
-  z-index:100;
+  left: -37px;
+  top: -9px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  box-shadow: 15px 5px 0 -5px var(--background-main);
+  transform: rotate(45deg);
 }
-.slider .all_socialssicss .social_iconLnks:hover p{
-  font-size: 16px;
+.socialsM .chevro .chedown{
+  display: none !important;
+}
+.socialsM .chevro .cheup, .socialsM .chevro .chedown{
+  border: 2px solid var(--color-main);
+  border-radius: 100%;
   position: absolute;
-  top: -40px;
+  padding: 3px;
+  opacity: .6;
+  animation: animate_updonics 0.3s linear infinite alternate-reverse;
+}
+.socialsM .chevro:hover .cheup, .socialsM .chevro:hover .chedown{
+  opacity: 1;
+  animation:none;
+}
+
+.socialsM.active .chevro .chedown{
+  display: flex !important;
+  
+}
+.socialsM.active .chevro .cheup{
+  display: none !important;
+}
+@keyframes animate_updonics {
+from {
+  opacity: 0.5;
+}
+to {
+  opacity: 1;
+}
+}
+.updonics .shevron_header:hover {
+opacity: 1;
+}
+
+.socialsM .chevro::after{
+  content: '';
+  background: transparent;
+  position: absolute;
+  right: -37px;
+  top: -9px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  box-shadow: 15px 5px 0 -5px var(--background-main);
+  transform: rotate(100deg);
+}
+
+
+
+
+
+.socialsM .social-media{
   background: var(--background-main);
-  padding: 5px;
+  width: 100%;
+  height: fit-content;
+  flex-wrap: wrap;
+  padding: 0 40px 20px 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  opacity: 0;
+}
+.socialsM.active .social-media{
+  opacity: 1;
+}
+
+.socialsM .social-media a{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: var(--background-mainopati);
+  width: 70px;
+  height: 70px;
   border-radius: 10px;
-  box-shadow: 0 0 10px var(--background-main);
-  opacity:1;
+  opacity: .8;
+  transition: .5s;
+}
+.socialsM .social-media a:hover{
+  opacity: 1;
+  background: var(--background-main);
+}
+
+.socialsM .social-media a i{
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 5px;
+  height: 5px;
+  background: var();
+  border-radius: 10px;
   color: var(--color-main);
+  transition: .3s;
+
+}
+
+.socialsM .social-media a:hover i{
+  font-size: 30px;
+  width: 100%;
+  height: 100%;
+  color: var(--background-main);
+  background: var(--color-main);
 }
 /* <!-- header slider socials ends --> */
 
 
 /* ======== Responsive ======= */
-
+@media (max-width: 963px){
+  .socialsM{
+    bottom: -200px;
+  }
+}
 @media (max-width: 900px){
 
   .slider .slide .info{
@@ -366,52 +398,38 @@ color: var(--color-main);
   .slider .slide.active{
     width: 100%;
   }
-
-
-
-  .slider .all_socialssicss{
-    width: 100%;
-  }
-
-
-
-  .navigation{
-    transform: rotate(0deg);
-    width: 100%;
-    right: 0;
-    bottom: 70px;
-    /* z-index: 100; */
-    background: transparent;
-    height: 20px;
-    padding-bottom: 20px;
-    gap: 20px;
-  }
-  /* .prev-btn, .next-btn{
-    position: absolute;
-  } */
-  /* .prev-btn{
-    left: 100px;
-  }
-  .next-btn{
-    right: 100px;
-  } */
   .prev-btn, .next-btn, .pause-btn{
     font-size: 14px;
   }
 
+  .socialsM{
+    bottom: -180px;
+  }
 
 
+  .navigation{
+    gap: 20px;
+    opacity: 1;
+    right: 0;
+    bottom: 3px;
+    transform: rotate(0);
+    width: 100%;
+    z-index: 1000;
+  }
 
 
-
-
+  .prev-btn, .next-btn, .pause-btn, .play-btn{
+    background: var(--color-sub-main);
+    color: var(--background-main);
+    padding:7px;
+  }
 
 
 
   
 }
 
-@media (max-width: 500px){
+@media (max-width: 508px){
   .slider .slide .info h2{
     font-size: 1.8em;
     line-height: 40px;
@@ -420,63 +438,28 @@ color: var(--color-main);
   .slider .slide .info p{
     font-size: 0.9em;
   }
-  .slider .all_socialssicss{
-    gap: 5px;
-    height: 40px;
-    width: 100%;
-  }
-
-  .navigation-visibility{
-    display: none;
-  }
-  .slider .all_socialssicss .social_iconLnks .iconsss{
-    position: absolute;
-    font-size: 30px;
-    opacity: .7;
-    color: var(--color-main);
-  }
-  .slider .all_socialssicss .social_iconLnks{
-    width: 20px;
-    height: 20px;
-    padding: 10px;
-    top: 20px;
-    background: transparent;
-  }
-  
-  
 
 
-  .slider .all_socialssicss .all_socsicss::before{
-    content: '';
-    background: transparent;
-    position: absolute;
-    left: -34px;
-    top: -9px;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    box-shadow: 15px 5px 0 -5px var(--background-main);
-    transform: rotate(45deg);
-  }
-  
-  
-  .slider .all_socialssicss .all_socsicss::after{
-    
-    right: -34px;
-    top: -9px;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    box-shadow: 15px 5px 0 -5px var(--background-main);
-    transform: rotate(100deg);
+  .socialsM{
+    bottom: -270px;
   }
   
 }
-@media (max-width: 330px){
-  .slider .all_socialssicss .all_socsicss::after{
-    display: none;
+@media only screen and (max-width: 418px){
+  .socialsM{
+    bottom: -350px;
   }
-  .slider .all_socialssicss .all_socsicss::before{
-    display: none;
+  .socialsM .social-media{
+    /* opacity: 1; */
+  }
+}
+@media only screen and (max-width: 330px) {
+  .socialsM{
+    bottom: -360px;
+  }
+}
+@media only screen and (max-width: 326px) {
+  .socialsM{
+    bottom: -450px;
   }
 }

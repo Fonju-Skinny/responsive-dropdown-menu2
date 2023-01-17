@@ -253,6 +253,10 @@ a {
   opacity: 0.5;
   animation: animate_updonics 0.3s linear infinite alternate-reverse;
 }
+.updonics .shevron_header:hover{
+  animation:none;
+}
+
 
 @keyframes animate_updonics {
   from {

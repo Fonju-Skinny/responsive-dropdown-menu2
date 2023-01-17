@@ -105,3 +105,27 @@ playBtn.addEventListener("click", () => {
   pauseBtn.style.display = "flex"
   playBtn.style.display = "none"
 });
+
+
+
+
+
+
+const socialsm = document.querySelector(".socialsM")
+
+const cheuP = document.querySelector(".cheup")
+
+const chedowN = document.querySelector(".chedown")
+
+const Blur = document.querySelector(".blur")
+
+cheuP.addEventListener("click", () => {
+  socialsm.classList.add("active")
+  Blur.classList.add("active")
+
+})
+chedowN.addEventListener("click", () => {
+  socialsm.classList.remove("active")
+  Blur.classList.remove("active")
+
+})
