@@ -82,8 +82,12 @@ body.activethemesGradient{
   --border-main: linear-gradient(
     90deg,
     rgba(34, 161, 254, 1) 0%,
-    rgba(56, 205, 229, 1) 100%
-  );
+    rgba(56, 205, 229, 1) 100%;
+    /* display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-direction: column; */
+  )
 
   --linear-gradient-1: linear-gradient(rgb(0, 0, 27), aqua);
 
@@ -1772,7 +1776,7 @@ form .btn button:hover{
   .fags{
       width: 95%;
     padding:0 ;
-    bottom: 0;
+    /* bottom: 0; */
     margin: 0;
   }
   .FAQS{

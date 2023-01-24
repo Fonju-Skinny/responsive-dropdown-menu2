@@ -109,7 +109,7 @@ body.activethemesGradient{
 
 }
 
-.slider .slide img{
+.slider > .slide > img{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -389,6 +389,7 @@ opacity: 1;
   }
   .navigation{
     opacity: 1;
+
   }
   .slider .slide{
     width: 5%;
@@ -419,7 +420,7 @@ opacity: 1;
     transform: rotate(0);
     width: 100%;
     z-index: 1000;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     background: var(--background-main);
     padding: 5px;
