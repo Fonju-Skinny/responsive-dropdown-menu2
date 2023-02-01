@@ -356,3 +356,18 @@ for(let i=0; i<toggles.length; i++){
 }
 
 // faqs section ends
+
+let containers = document.querySelector('.containers')
+let card = document.querySelectorAll('.card')
+// let HH2 = document.querySelectorAll('li h2')
+
+
+card.forEach(el => {
+   el.addEventListener("click", function(){
+    containers.querySelector('.active').classList.remove('active')
+
+
+      el.classList.add('active')
+      // HH2.classList.add('HE2')
+   })
+})
